@@ -4,8 +4,12 @@
 
 echo "Enter a positive number"
 read number
-while echo $number | egrep -v "^[0-9]$" > /dev/null 2>&1 
-do
-	echo "
+
+N=1
+while [ $N -le $number ]
+   do
+   	if [ $((N%2)) -eq 0 ]
+	then
+	  echo $N " Even"
 
 done
